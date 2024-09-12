@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网页</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center; /* 中心对齐 */
+        }
+
+        .banner-container {
+            position: relative; /* 设置相对定位 */
+            width: 100%; /* 图片宽度 */
+            max-width: 800px; /* 最大宽度 */
+            margin: auto; /* 居中 */
+        }
+
+        .banner {
+            width: 100%; /* 图片宽度 */
+            height: auto; /* 高度自适应 */
+        }
+
+        .discord-button {
+            position: absolute; /* 设置为绝对定位 */
+            bottom: 120px;      /* 距离底部 20px */
+            left: 50%;         /* 左侧 50% */
+            transform: translateX(-50%); /* 水平居中 */
+            background-color: #7289DA; /* Discord 蓝色 */
+            color: white;              /* 字体颜色 */
+            border: none;              /* 无边框 */
+            padding: 20px 40px;        /* 增加内边距以增大按钮大小 */
+            text-align: center;        /* 文本居中 */
+            text-decoration: none;      /* 去除下划线 */
+            display: inline-block;      /* 使按钮呈现为块元素 */
+            font-size: 50px;           /* 增加字体大小 */
+            cursor: pointer;           /* 鼠标悬停时显示为手形 */
+            border-radius: 10px;       /* 调整圆角 */
+            transition: background-color 0.3s; /* 背景色过渡效果 */
+        }
+
+        .discord-button:hover {
+            background-color: #5B6EAE; /* 鼠标悬停时的颜色 */
+        }
+
+        /* 媒体查询：当屏幕宽度小于600px时 */
+        @media (max-width: 600px) {
+            .discord-button {
+                padding: 15px 30px; /* 减小内边距 */
+                font-size: 18px;     /* 减小字体大小 */
+            }
+            h1 {
+                font-size: 24px; /* 调整标题字体大小 */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner-container">
+        <img src="3.jpg" alt="主图" class="banner">
+        <a href="https://discord.gg/nupnGPhy" target="_blank" class="discord-button">点击免费领取</a>
+    </div>
+</body>
+</html>
